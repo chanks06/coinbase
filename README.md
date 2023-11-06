@@ -18,3 +18,9 @@ Git
 scripting + querying : python, postgreSQL with psycopg2 library
 cloud stuff: AWS
 front-end framework: django ? Power BI ? TBD 
+
+NOTES: 
+crypto price to track [NEAR protocol](https://coinmarketcap.com/currencies/near-protocol/)
+
+mabye also highlight cybersecurity experience? 
+
