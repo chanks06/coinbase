@@ -1,5 +1,5 @@
 
-# ETL for cryptocurrency price tracking. 
+# ETL for cryptocurrency price tracking - writing bitcoin, ethereum, and near prices to a postgres db every 4 hours. 
 
 #LIBRARIES 
 import requests
