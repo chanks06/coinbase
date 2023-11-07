@@ -141,7 +141,7 @@ def main():
 while True: 
     main() 
     print("sleeping for 4 hours")
-    time.sleep(14400)
+    time.sleep(3600)
 
 
 
