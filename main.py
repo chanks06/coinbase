@@ -12,7 +12,7 @@ from datetime import datetime
 
 def main(): 
     # Loading environment variables
-    load_dotenv("./moon.env")
+    load_dotenv("./.env")
 
     #extracting API and database credentials from .env
     api_key = os.getenv("api_key")
@@ -59,10 +59,10 @@ def main():
 
         #creating schema for organize tables: 
         cursor.execute("CREATE SCHEMA IF NOT EXISTS crypto;")
-        cursor.execute("GRANT ALL PRIVELEGS ON SCHEMA crypto to postgres;")
+        cursor.execute("GRANT ALL PRIVILEGES ON SCHEMA crypto to postgres;")
 
         #making sure timestamp will display in my local time
-        cursor.execute("SET TIMEZONE = 'America/Los_Angeles':") 
+        cursor.execute("SET TIMEZONE = 'America/Los_Angeles';") 
 
         connection.commit() 
 
@@ -140,7 +140,7 @@ def main():
 
 while True: 
     main() 
-    print("sleeping for 4 hours)")
+    print("sleeping for 4 hours")
     time.sleep(14400)
 
 
