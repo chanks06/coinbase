@@ -12,16 +12,16 @@ from datetime import datetime
 
 def main(): 
     # Loading environment variables
-    load_dotenv("./.env")
+    #load_dotenv("./.env")
 
     #extracting API and database credentials from .env
     api_key = os.getenv("api_key")
     api_secret = os.getenv("api_secret")
-    db_host = os.getenv("DB_HOST")
-    db_port = os.getenv("DB_PORT")
-    db_name = os.getenv("DB_NAME")
-    db_user = os.getenv("DB_USER")
-    db_password = os.getenv("DB_PASSWORD")
+    db_host = os.getenv("PGHOST")
+    db_port = os.getenv("PGPORT")
+    db_name = os.getenv("PGDATABASE")
+    db_user = os.getenv("PGUSER")
+    db_password = os.getenv("PGPASSWORD")
 
     #creating connection to railway postgres db: 
     connection = psycopg2.connect(
